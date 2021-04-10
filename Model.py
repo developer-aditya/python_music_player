@@ -8,7 +8,7 @@ class Model:
         self.conn = None
         self.cur = None
         try:
-            self.conn = cx_Oracle.connect("Mouzikka/music@127.0.0.1")
+            self.conn = cx_Oracle.connect("music_player/music@127.0.0.1")
             self.cur = self.conn.cursor()
 
         except cx_Oracle.DatabaseError as ex:
